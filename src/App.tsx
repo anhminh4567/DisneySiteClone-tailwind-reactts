@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { ProductionHouse } from "./components/ProductionHouse";
 import { Slider } from "./components/Slider";
 
 export default function App() {
@@ -10,6 +11,9 @@ export default function App() {
         </section>
         <section className="slider">
           <Slider />
+        </section>
+        <section>
+          <ProductionHouse />
         </section>
       </div>
     </>

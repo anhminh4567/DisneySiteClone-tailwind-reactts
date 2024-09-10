@@ -37,12 +37,12 @@ export const Slider = () => {
           }}
         />
 
-        <div className="flex overflow-x-scroll w-full p-2 scrollbar-hide scroll-smooth " ref={carosal}>
+        <div className="flex overflow-x-scroll w-full  scrollbar-hide scroll-smooth " ref={carosal}>
           {movieList.map((item, index) => {
             return (
               <>
-                <div className="min-w-full px-16 py-4 ">
-                  <img src={TMDB_BASE_IMAGE_URL + item.backdrop_path} className="min-w-full h-[460px]  object-cover rounded-xl mr-5  hover:border-[4px] border-gray-400 ease-in-out duration-150" />
+                <div className="min-w-full py-4 px-16">
+                  <img src={TMDB_BASE_IMAGE_URL + item.backdrop_path} className="min-w-full h-[460px]   object-cover rounded-xl  hover:border-[4px] border-gray-400 ease-in-out duration-150" />
                 </div>
               </>
             );
